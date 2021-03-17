@@ -29,6 +29,7 @@ img {
 .fullsizeimg {
   /* Large full-sized images included in text */
   position: relative;
+  max-height: none;
   height: 100%
   }
 
