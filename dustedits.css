@@ -9,7 +9,7 @@ body {
   background-color:wheat
   }
 
-h1,h2,h3,h4,h5,h6 {font-family: Consolas,"Helvetica", "sans-serif"}
+h1,h2,h3,h4,h5,h6 {font-family: "Consolas","Helvetica", "sans-serif"}
 h1 {margin-left: -30px; margin-bottom: .2em; font-family:"Helvetica", "sans-serif"}
 h2 {margin-left: -25px; margin-bottom: .2em; font-family:"Helvetica", "sans-serif"}
 h3 {margin-left: -20px; margin-bottom: .2em}
