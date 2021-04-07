@@ -35,7 +35,6 @@ ul {
   text-indent: -1em;
   margin-left: 10%;
   padding: 0;
-  border: 1px solid black;
   list-style-position: outside;
 }
 ol {
@@ -43,13 +42,11 @@ ol {
   text-indent: -2em;
   margin-left: 10%;
   padding: 0;
-  border: 1px solid black;
   list-style-position: inside;
   list-style: none; /* Remove HTML bullets */
 }
 li {
   margin-left: 0%;
-  border: 1px solid black;
 }
 ol li::before {
   content: "•";
