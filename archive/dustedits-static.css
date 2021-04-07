@@ -1,0 +1,55 @@
+html,body {
+  font-size: 10pt;
+  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace
+  }
+
+body {
+  margin-left: 50px;
+  max-width: 101ex;
+  background-color:wheat
+  }
+
+h1,h2,h3,h4,h5,h6 {font-family: "Consolas","Helvetica", "sans-serif"}
+h1 {margin-left: -30px; margin-bottom: .2em; font-family:"Helvetica", "sans-serif"}
+h2 {margin-left: -25px; margin-bottom: .2em; font-family:"Helvetica", "sans-serif"}
+h3 {margin-left: -20px; margin-bottom: .2em}
+h4 {margin-left: -15px; margin-bottom: .2em}
+h5 {margin-left: -10px; margin-bottom: 0em}
+h6 {margin-left: -5px; margin-bottom: 0em}
+
+a {text-decoration: none; color:darkred; font-weight: bold;}
+a:hover {text-decoration: underline;}
+p {margin-top: 0em}
+
+li {margin-left: 0em}
+/* downgrades lists for markdown use ordered = bullet, unordered = no symbol */
+ul {list-style-type: none; text-indent: -2em; padding-left: 2em;}
+ol {list-style-type: disc; text-indent: 0em}
+
+img {
+  /* Used for the small inline icons tagged in markdown */
+  position: relative;
+  bottom: -1px;
+  max-height: .8em;
+  width: auto
+  }
+
+.fullsizeimg {
+  /* Large full-sized images included in text */
+  position: relative;
+  max-height: none;
+  height: 100%
+  }
+
+.titleimg {
+  /* the title image for the document */
+  position: relative;
+  top:-10px;
+  left:-50px;
+  max-width: 100%;
+  height: auto;
+  max-height: none
+  }
+
+/* table of contents class*/
+.toc {padding-left: 2ex}

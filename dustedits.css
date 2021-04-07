@@ -1,30 +1,59 @@
 html,body {
   font-size: 10pt;
   font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace
-  }
-
+}
 body {
-  margin-left: 50px;
+  padding: 0px;
+  margin: 0px;
   max-width: 101ex;
   background-color:wheat
-  }
+}
+h1, h2 {font-family:"Helvetica", "sans-serif"}
+h3,h4,h5,h6 {font-family: "Consolas","Helvetica", "sans-serif";}
+h1,h2,h3,h4,h5,h6 {margin-bottom: .2em}
+h1 {margin-left: 4%;}
+h2 {margin-left: 6%;}
+h3 {margin-left: 8%;}
+h4 {margin-left: 9%; margin-top: .2em;}
+h5 {margin-left: 10%;}
+h6 {margin-left: 10%;}
 
-h1,h2,h3,h4,h5,h6 {font-family: "Consolas","Helvetica", "sans-serif"}
-h1 {margin-left: -30px; margin-bottom: .2em; font-family:"Helvetica", "sans-serif"}
-h2 {margin-left: -25px; margin-bottom: .2em; font-family:"Helvetica", "sans-serif"}
-h3 {margin-left: -20px; margin-bottom: .2em}
-h4 {margin-left: -15px; margin-bottom: .2em}
-h5 {margin-left: -10px; margin-bottom: 0em}
-h6 {margin-left: -5px; margin-bottom: 0em}
-
-a {text-decoration: none; color:darkred; font-weight: bold;}
+a {
+  text-decoration: none;
+  color:darkred;
+  font-weight: bold;
+}
 a:hover {text-decoration: underline;}
-p {margin-top: 0em}
+p {
+  margin-top: 0em;
+  margin-left: 10%;
+}
 
-li {margin-left: 0em}
-/* downgrades lists for markdown use ordered = bullet, unordered = no symbol */
-ul {list-style-type: none; text-indent: -2em; padding-left: 2em;}
-ol {list-style-type: disc; text-indent: 0em}
+/* downgrades lists for use with markdown. Ordered = bullet, unordered = no symbol */
+ul {
+  list-style-type: none;
+  text-indent: -1em;
+  margin-left: 10%;
+  padding: 0;
+  border: 1px solid black;
+  list-style-position: outside;
+}
+ol {
+  list-style-type: disc;
+  text-indent: -2em;
+  margin-left: 10%;
+  padding: 0;
+  border: 1px solid black;
+  list-style-position: inside;
+  list-style: none; /* Remove HTML bullets */
+}
+li {
+  margin-left: 0%;
+  border: 1px solid black;
+}
+ol li::before {
+  content: "•";
+  padding-right: .5em;}
 
 img {
   /* Used for the small inline icons tagged in markdown */
@@ -32,24 +61,79 @@ img {
   bottom: -1px;
   max-height: .8em;
   width: auto
-  }
-
+}
 .fullsizeimg {
   /* Large full-sized images included in text */
-  position: relative;
+  height: auto;
+  width: auto;
+  max-width: 100%;
   max-height: none;
-  height: 100%
-  }
-
+}
 .titleimg {
   /* the title image for the document */
-  position: relative;
   top:-10px;
-  left:-50px;
+  left:0px;
+  width: 100vw;
   max-width: 100%;
   height: auto;
   max-height: none
-  }
+}
 
 /* table of contents class*/
-.toc {padding-left: 2ex}
+.toc {
+  padding-left: 6%;
+}
+.toc li {padding-left: 4%; margin-left: 0em;}
+.toc ul {padding-left: 0px; margin-left: 0em; text-indent: 0em;}
+
+@media (min-width:0px)  {
+  h1 {margin-left: 0%;}
+  h2 {margin-left: 1%;}
+  h3 {margin-left: 2%;}
+  h4 {margin-left: 3%;}
+  h5 {margin-left: 4%;}
+  h6 {margin-left: 4%;}
+  p {margin-left: 4%;}
+  .fullsizeimg {
+    margin-left: -4%;
+    padding-left: 0vw;
+  }
+}
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  h1 {margin-left: 0%;}
+  h2 {margin-left: 1%;}
+  h3 {margin-left: 2%;}
+  h4 {margin-left: 3%;}
+  h5 {margin-left: 4%;}
+  h6 {margin-left: 4%;}
+  p {margin-left: 4%;}
+  .fullsizeimg {
+    margin-left: -4%;
+    padding-left: 0vw;
+  }
+}
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */
+}
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  h1 {margin-left: 4%;}
+  h2 {margin-left: 6%;}
+  h3 {margin-left: 8%;}
+  h4 {margin-left: 9%;}
+  h5 {margin-left: 10%;}
+  h6 {margin-left: 10%;}
+  p {margin-left: 10%;}
+  .fullsizeimg {
+    margin-left: 0%;
+    padding-left: inherit;
+    box-sizing: border-box;
+  }
+  /* some longer list items are converted to paragraphs, this removes paragraph indent*/
+  li p{margin-left: 0%;}
+  li {margin-left: 12%;}
+}
+@media (min-width:720px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
