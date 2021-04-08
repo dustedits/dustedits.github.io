@@ -56,8 +56,8 @@ img {
   /* Used for the small inline icons tagged in markdown */
   position: relative;
   bottom: -1px;
-  max-height: .8em;
-  width: auto
+  height: .8em;
+  width: .8em;
 }
 .fullsizeimg {
   /* Large full-sized images included in text */
@@ -126,7 +126,8 @@ img {
   }
   /* some longer list items are converted to paragraphs, this removes paragraph indent*/
   li p{margin-left: 0%;}
-  li {margin-left: 12%;}
+  ul li {margin-left: 6%;}
+  ol li {margin-left: 8%;}
 }
 @media (min-width:720px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 }
