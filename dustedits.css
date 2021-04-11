@@ -93,6 +93,7 @@ table {
 td {
   vertical-align: middle;
   padding-right: 1em;
+  padding-bottom: .4em;
 }
 td:first-child {text-align: right}
 
