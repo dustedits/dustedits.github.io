@@ -1,0 +1,146 @@
+@font-face {
+  font-family: BlackOpsOne;
+  src: url("../fonts/BlackOpsOne-Regular.ttf");
+  }
+
+html,body {
+  font-size: 10pt;
+  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  max-width: 700px;
+  background-color: #afc096;
+
+}
+h1, h2 {font-family:"Helvetica", "sans-serif"}
+h3,h4,h5,h6 {font-family: "Consolas","Helvetica", "sans-serif";}
+h1,h2,h3,h4,h5,h6 {
+  margin-bottom: .2em;
+  color:#333333;
+}
+h1 {margin-left: 4%;}
+h2 {margin-left: 6%;}
+h3 {margin-left: 8%;}
+h4 {margin-left: 9%; margin-top: .2em;}
+h5 {margin-left: 10%;}
+h6 {margin-left: 10%;}
+
+a {
+  color:#333333;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: none;
+  color:#efdab1;}
+p {
+  margin-top: 0em;
+  margin-left: 10%;
+}
+
+img {
+  /* Used for the small inline icons tagged in markdown */
+  position: relative;
+  bottom: -1px;
+  height: .8em;
+  width: auto;
+}
+.fullsizeimg {
+  /* Large full-sized images included in text */
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: none;
+}
+.titleimg {
+  /* the title image for the document */
+  top:-10px;
+  left:0px;
+  width: 100vw;
+  max-width: 100%;
+  height: auto;
+  max-height: none
+}
+
+@media (min-width:0px)  {
+  h1 {margin-left: 0%;}
+  h2 {margin-left: 1%;}
+  h3 {margin-left: 2%;}
+  h4 {margin-left: 3%;}
+  h5 {margin-left: 4%;}
+  h6 {margin-left: 4%;}
+  p {margin-left: 4%;}
+  .fullsizeimg {
+    margin-left: -4%;
+    padding-left: 0vw;
+  }
+}
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  h1 {margin-left: 0%;}
+  h2 {margin-left: 1%;}
+  h3 {margin-left: 2%;}
+  h4 {margin-left: 3%;}
+  h5 {margin-left: 4%;}
+  h6 {margin-left: 4%;}
+  p {margin-left: 4%;}
+  .fullsizeimg {
+    margin-left: -4%;
+    padding-top: 2%;
+    padding-left: 0vw;
+  }
+}
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */
+}
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  h1 {margin-left: 4%;}
+  h2 {margin-left: 6%;}
+  h3 {margin-left: 8%;}
+  h4 {margin-left: 9%;}
+  h5 {margin-left: 10%;}
+  h6 {margin-left: 10%;}
+  p {margin-left: 10%;}
+  .fullsizeimg {
+    margin-left: 0%;
+    padding-left: inherit;
+    box-sizing: border-box;
+  }
+  /* some longer list items are converted to paragraphs, this removes paragraph indent*/
+  li p{margin-left: 0%;}
+  ul li {margin-left: 6%;}
+  ol li {margin-left: 8%;}
+}
+@media (min-width:720px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+/* for scenario type */
+.scenariotype {text-transform: uppercase; font-weight: 900;}
+
+/* terrain tile image */
+.terraintile {
+  /* Large full-sized images included in text */
+  position: relative;
+  max-height: 3em;
+  height: 100%
+  }
+
+/* battlefield notes classes */
+.battlefieldnote {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+  align-content: space-between;
+  padding-bottom: 1em;
+}
+.bfnoteimage {
+
+}
+.bfnotetext {
+    margin-left: 4%;
+    text-indent: -1em;
+
+}
