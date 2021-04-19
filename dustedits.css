@@ -56,7 +56,7 @@ img {
   /* Used for the small inline icons tagged in markdown */
   position: relative;
   bottom: -1px;
-  height: .8em;
+  height: 1em;
   width: auto;
 }
 .fullsizeimg {
