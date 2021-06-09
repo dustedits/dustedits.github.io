@@ -207,9 +207,10 @@ Italy: <a href="www.ammodrop.eu">www.ammodrop.eu</a>  </p>
 </ul>
 </li>
 <li><a href="#terrain">TERRAIN</a><ul>
+<li><a href="#terrain-summary-table">TERRAIN SUMMARY TABLE</a></li>
 <li><a href="#standard-terrain">STANDARD TERRAIN</a><ul>
 <li><a href="#open">Open</a></li>
-<li><a href="#mud">Mud</a></li>
+<li><a href="#mud-sand">Mud &amp; Sand</a></li>
 <li><a href="#trees">Trees</a></li>
 <li><a href="#roads">Roads</a></li>
 <li><a href="#rubble">Rubble</a></li>
@@ -834,14 +835,505 @@ When playing a Vehicle with multiple crew members such as the SSU's Red Fury or 
 <p>Once the Reactive Attack is resolved, the Triggering Unit completes the remaining actions. If performing a March Move Action, the Triggering Unit moves the remaining portion of it's March Move distance.</p>
 <p>Regardless of the outcome of the Reactive Attack attempt, the Reacting Unit has activated for the turn (but may be reactivated with <a href="#get-moving-you-bunch-of-monkeys">Get Moving You Bunch of Monkeys</a> Command Action).</p>
 <h1 id="terrain"><a class="toclink" href="#terrain">TERRAIN</a></h1>
+<h2 id="terrain-summary-table"><a class="toclink" href="#terrain-summary-table">TERRAIN SUMMARY TABLE</a></h2>
+<table class="terrain-table">
+  <tr>
+    <th>
+      Terrain Type
+    </th>
+    <th>
+      LoS
+    </th>
+    <th>
+      Cover
+    </th>
+    <th>
+      Infantry Movement
+    </th>
+    <th>
+      Walker Movement
+    </th>
+    <th>
+      Tracked Movement
+    </th>
+    <th>
+      Half-Tracked Movement
+    </th>
+    <th>
+      Wheeled Movement
+    </th>
+  </tr>
+
+  <tr>
+    <td>
+      <a href="#open">Open</a>
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+  </tr>
+
+  <tr class="terrain-row">
+    <td>
+      <a href="#mud-sand">Mud & Sand</a>
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-half">
+      Half
+    </td>
+    <td class="terrain-half">
+      Half
+    </td>
+    <td class="terrain-half">
+      Half
+    </td>
+    <td class="terrain-half">
+      Half
+    </td>
+    <td class="terrain-half">
+      Half
+    </td>
+  </tr>
+
+  <tr class="terrain-row">
+    <td>
+      <a href="#trees">Trees</a>
+    </td>
+    <td class="terrain-partial">
+      Partial
+    </td>
+    <td class="terrain-cover">
+      Cover
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+  </tr>
+
+  <tr class="terrain-row">
+    <td>
+      <a href="#roads">Roads</a>
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-improved">
+      Improved
+    </td>
+    <td class="terrain-improved">
+      Improved
+    </td>
+    <td class="terrain-improved">
+      Improved
+    </td>
+  </tr>
+
+  <tr class="terrain-row">
+    <td>
+      <a href="#rubble">Rubble</a>
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+  </tr>
+
+  <tr class="terrain-row">
+    <td>
+      <a href="#smoke">Smoke</a>
+    </td>
+    <td class="terrain-partial">
+      Partial
+    </td>
+    <td class="terrain-cover">
+      Cover
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+  </tr>
+
+  <tr class="terrain-row">
+    <td>
+      <a href="#structures-impassable-terrain">Structures & Impassable Terrain</a>
+    </td>
+    <td class="terrain-blocked">
+      Blocked
+    </td>
+    <td class="terrain-blocked">
+      n/a
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+  </tr>
+
+  <tr class="terrain-row">
+    <td>
+      <a href="#climbable-structures-plinths">
+        Climbable Structures & Plinths
+      </a>
+    </td>
+    <td class="terrain-partial">
+      Partial
+    </td>
+    <td class="terrain-other">
+    Height Advantage
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+  </tr>
+
+  <tr class="terrain-row">
+    <td>
+      <a href="#swamps">Swamps</a>
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-amphibious">
+      Amphibious Only
+    </td>
+    <td class="terrain-amphibious">
+      Amphibious Only
+    </td>
+    <td class="terrain-amphibious">
+      Amphibious Only
+    </td>
+  </tr>
+
+  <tr class="terrain-row">
+    <td>
+      <a href="#water">Water</a>
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-amphibious">
+      Amphibious Only
+    </td>
+    <td class="terrain-amphibious">
+      Amphibious Only
+    </td>
+    <td class="terrain-amphibious">
+      Amphibious Only
+    </td>
+    <td class="terrain-amphibious">
+      Amphibious Only
+    </td>
+    <td class="terrain-amphibious">
+      Amphibious Only
+    </td>
+  </tr>
+
+  <tr class="terrain-row">
+    <td>
+      <a href="#ammo-crates">Ammo Crates</a>
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-cover">
+      Cover
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+  </tr>
+
+  <tr class="terrain-row">
+    <td>
+      <a href="#tank-traps">Tank Traps</a>
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-cover">
+      Cover
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+  </tr>
+
+  <tr class="terrain-row">
+    <td>
+      <a href="#low-walls">Low Walls</a>
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-cover">
+      Cover
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-impassable-alt">
+      Impassable for Armor&nbsp;1
+    </td>
+    <td class="terrain-impassable-alt">
+      Impassable for Armor&nbsp;1
+    </td>
+    <td class="terrain-impassable-alt">
+      Impassable for Armor&nbsp;1
+    </td>
+  </tr>
+
+  <tr class="terrain-row">
+    <td>
+      <a href="#high-walls-buildings">High Walls & Buildings</a>
+    </td>
+    <td class="terrain-partial">
+      Partial
+    </td>
+    <td class="terrain-cover">
+      Cover
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-largeopenings">
+      Large+ Openings Only
+    </td>
+    <td class="terrain-largeopenings">
+      Large+ Openings Only
+    </td>
+    <td class="terrain-largeopenings">
+      Large+ Openings Only
+    </td>
+    <td class="terrain-largeopenings">
+      Large+ Openings Only
+    </td>
+  </tr>
+
+  <tr class="terrain-row">
+    <td>
+      <a href="#multi-story-buildings">Multi-Story Buildings</a>
+    </td>
+    <td class="terrain-partial-alt">
+      Partial between floors
+    </td>
+    <td class="terrain-cover-alt">
+      Cover between floors
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-largeopenings">
+      Large+ Openings Only
+    </td>
+    <td class="terrain-largeopenings">
+      Large+ Openings Only
+    </td>
+    <td class="terrain-largeopenings">
+      Large+ Openings Only
+    </td>
+    <td class="terrain-largeopenings">
+      Large+ Openings Only
+    </td>
+  </tr>
+
+  <tr class="terrain-row">
+    <td>
+      <a href="#short-buildings-quonset-huts">Short Buildings & Quonset Huts</a>
+    </td>
+    <td class="terrain-blocked-alt">
+      Blocked, except for Walkers & Large/Huge Vehicles
+    </td>
+    <td class="terrain-cover">
+      Cover
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+  </tr>
+
+  <tr class="terrain-row">
+    <td>
+      <a href="#wrecks">Wrecks</a>
+    </td>
+    <td class="terrain-blocked-alt">
+      Blocked, unless a Small Wreck
+    </td>
+    <td class="terrain-cover">
+      Cover
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-open">
+      Open
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+    <td class="terrain-impassable">
+      Impassable
+    </td>
+  </tr>
+</table>
+
 <h2 id="standard-terrain"><a class="toclink" href="#standard-terrain">STANDARD TERRAIN</a></h2>
 <p>Movement, Line of Sight and <a href="#5-target-units-roll-saves">Cover</a> may be blocked or affected by different types of designated Terrain.</p>
 <p>Prior to setting up the battlefield, discuss with all players how different types of terrain will be represented. For a few examples, consider which walls are low (cover) or high (impassible), if particular trees are large (height 2) or small (height 1), and which multi-story buildings are considered to have wooden floors &amp; ceilings (permit combat between floors).</p>
 <p>In Dust 1947 there are the following types of Standard Terrain:</p>
 <h3 id="open"><a class="toclink" href="#open">Open</a></h3>
 <p>Flat, open areas, such as plains and recently harvested farm fields. Units can pass through and Occupy, and Obstacles can be placed in Open Terrain.  </p>
-<h3 id="mud"><a class="toclink" href="#mud">Mud</a></h3>
-<p>Mud is treated as Open Terrain that reduces Move and March Move Values to half (rounded down but never less than 1) for all Units except Aircraft.  </p>
+<h3 id="mud-sand"><a class="toclink" href="#mud-sand">Mud &amp; Sand</a></h3>
+<p>Mud or Sand terrain squares are treated as Open Terrain that reduces Move and March Move Values to half (rounded down but never less than 1) for all Units except Aircraft.  </p>
 <h3 id="trees"><a class="toclink" href="#trees">Trees</a></h3>
 <p>A large tree or small trees. Units can pass through and share positions with a Tree to use it for <a href="#5-target-units-roll-saves">Cover</a>. Trees block Line of Sight if they completely obscure the Unit or provide Cover if they only partially obscure the Unit.</p>
 <p>In other words, LoS only penetrates 1 square into trees, blocking LoS for squares beyond, and may grant "corner cover" in the same manner as terrain which blocks LoS. <img alt="Source: DustEdits" src="images/source-dustedits.png" /></p>
@@ -892,6 +1384,7 @@ When two Units are only one floor apart, floors and ceilings do not block Line o
 <h3 id="wrecks"><a class="toclink" href="#wrecks">Wrecks</a></h3>
 <p><img alt="Source: 2019 Errata and FAQ" src="images/source-faq.png" /><br />
 When a Ground Vehicle (not Aircraft) is destroyed during the game, it remains on the battlefield and becomes a Wreck Terrain. It can also be replaced by a destroyed Vehicle miniature or other proxy if the Player needs to re-use the miniature. A Wreck provides <a href="#5-target-units-roll-saves">Cover</a>. It also blocks Line of Sight in the same way the Vehicle did before it became a Wreck. Only Infantry, Walkers and Aircraft can move through a Wreck. Only Infantry Units can occupy a Wreck (i.e. end their movement in it) and are considered in Cover when they do so. Aircraft can end their movement over a Wreck, but do not benefit from Cover.</p>
+<p><em>Note:</em> Vehicles with the <a href="#small-vehicles">Small Vehicle</a> property do not block line of sight. <img alt="Source: DustEdits" src="images/source-dustedits.png" /></p>
 <h2 id="special-terrain"><a class="toclink" href="#special-terrain">SPECIAL TERRAIN</a></h2>
 <p>Special Terrain has additional rules which affect gameplay, beyond affecting Movement, Line of Sight and Cover. Some scenarios use special terrain to deepen the gameplay experience.</p>
 <h3 id="fortifications-bunkers-strongpoints"><a class="toclink" href="#fortifications-bunkers-strongpoints">Fortifications — Bunkers &amp; Strongpoints</a></h3>

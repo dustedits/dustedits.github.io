@@ -95,46 +95,7 @@ td {
   padding-right: 1em;
   padding-bottom: .4em;
 }
-
-td:first-child {text-align: right;}
-
-table.terrain-table {border: 3px solid #666666; border-collapse: collapse; border-spacing: 15px}
-
-table.terrain-table th, table.terrain-table td {
-  padding: 4px; border-right: 1px solid #666666;
-}
-table.terrain-table th {border-bottom: 3px solid #666666;}
-table.terrain-table th:first-child, table.terrain-table td:first-child {
-  border-right: 3px solid #666666;
-}
-table.terrain-table td {text-align: center;}
-table.terrain-table tr {border-bottom: 1px dashed #666666;}
-table.terrain-table tr:hover {border: 2px solid darkred; background-color: #f0f0f0; text-shadow: 1px 1px 3px #666666;}
-table.terrain-table td {text-align: center;}
-table.terrain-table td:first-child {text-align: right;}
-
-table.terrain-table th:nth-child(2), table.terrain-table th:nth-child(3), table.terrain-table td:nth-child(2), table.terrain-table td:nth-child(3) {
-  border-right: 2px solid #666666;
-}
-
-td.terrain-open {background-color: #bbeeaa;}
-td.terrain-partial {background-color: #ffcc33;}
-td.terrain-partial-alt {background-color: #ccbb66;}
-td.terrain-blocked {background-color: #888888;}
-td.terrain-blocked-alt {background-color: #888888;}
-td.terrain-cover {background-color: #ffcc33;}
-td.terrain-cover-alt {background-color: #ccbb66;}
-td.terrain-half {background-color: #ffaa33;}
-td.terrain-improved {background-color: #77dd55;}
-td.terrain-impassable {background-color: #cc9966;}
-td.terrain-impassable-alt {background-color: #e6ebad;}
-td.terrain-amphibious {background-color: #99ddff;}
-td.terrain-largeopenings {background-color: #df9fdf;}
-
-td.terrain-other {background-color: #ccbb66;}
-
-
-
+td:first-child {text-align: right}
 
 @media (min-width:0px)  {
   h1 {margin-left: 0%;}
