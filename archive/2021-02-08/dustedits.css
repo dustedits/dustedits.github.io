@@ -76,26 +76,6 @@ img {
   max-height: none
 }
 
-#navfloat {
-  /* floating nav buttons */
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-  width: 10%;
-  height: auto;
-  z-index: 4;
-}
-
-.returntotop {
-  /* for the return to top image */
-  border-radius: 20%;
-}
-
-.skillnavbutton {
-  /* for the return to top image */
-  border-radius: 20%;
-}
-
 /* table of contents class*/
 .toc {
   padding-left: 6%;
