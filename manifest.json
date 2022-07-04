@@ -1,0 +1,26 @@
+{
+    "short_name": "DustEdits",
+    "name": "Dust Unofficial Edits",
+    "icons": [
+        {
+            "src": "/images/dust-ue-icon-128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "/images/dust-ue-icon-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/images/dust-ue-icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/index.html",
+    "background_color": "wheat",
+    "display": "standalone",
+    "scope": "/app/",
+    "theme_color": "wheat"
+}
